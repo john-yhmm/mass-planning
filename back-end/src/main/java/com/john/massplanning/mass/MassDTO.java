@@ -13,5 +13,5 @@ public record MassDTO(
         LocalDate date,
         LocalTime time,
         List<MassDetailDTO> massDetailList
-) implements Serializable {
+) {
 }

@@ -8,5 +8,5 @@ public record MassDetailDTO(
         MassDetailType type,
         String name,
         Integer linkedId
-) implements Serializable {
+) {
 }

@@ -12,5 +12,5 @@ public record PageDTO<T>(
         int numberOfElements,
         int totalPages,
         long totalElements
-) implements Serializable {
+) {
 }
