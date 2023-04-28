@@ -1,6 +1,6 @@
-package com.john.massplanning.massplan;
+package com.john.massplanning.mass;
 
-public enum MassPlanItemType {
+public enum MassDetailType {
     ENTRANCE_HYMN,
     KYRIE,
     GLORIA,

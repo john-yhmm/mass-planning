@@ -1,6 +1,13 @@
-package com.john.massplanning.massplan;
+package com.john.massplanning.mass;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,8 +17,8 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Entity
-@Table(name = "mass_plan_item")
-public class MassPlanItem implements Serializable {
+@Table(name = "mass_detail")
+public class MassDetail implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 7986055042251640128L;
@@ -25,7 +32,7 @@ public class MassPlanItem implements Serializable {
     private Byte serialNo;
 
     @Column(name = "type")
-    private MassPlanItemType type;
+    private MassDetailType type;
 
     @Column(name = "name")
     private String name;
@@ -34,7 +41,7 @@ public class MassPlanItem implements Serializable {
     private Integer linkedId;
 
     @ManyToOne
-    @JoinColumn(name = "mass_plan_id")
-    private MassPlan massPlan;
+    @JoinColumn(name = "mass_id")
+    private Mass mass;
 
 }

@@ -1,11 +1,11 @@
-package com.john.massplanning.massplan;
+package com.john.massplanning.mass;
 
 import java.util.function.Function;
 
-public class MassPlanItemDTOMapper implements Function<MassPlanItem, MassPlanItemDTO> {
+public class MassDetailDTOMapper implements Function<MassDetail, MassDetailDTO> {
     @Override
-    public MassPlanItemDTO apply(MassPlanItem entity) {
-        return new MassPlanItemDTO(
+    public MassDetailDTO apply(MassDetail entity) {
+        return new MassDetailDTO(
                 entity.getId(),
                 entity.getSerialNo(),
                 entity.getType(),

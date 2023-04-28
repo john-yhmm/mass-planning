@@ -1,11 +1,11 @@
-package com.john.massplanning.massplan;
+package com.john.massplanning.mass;
 
 import java.io.Serializable;
 
-public record MassPlanItemDTO(
+public record MassDetailDTO(
         Integer id,
         Byte serialNo,
-        MassPlanItemType type,
+        MassDetailType type,
         String name,
         Integer linkedId
 ) implements Serializable {
